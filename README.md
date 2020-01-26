@@ -43,3 +43,15 @@ Review:
   * **git** diff shows the difference between the working directory and the staging area. 
   * **git** commit permanently stores file changes from the staging area in the reppository. 
   * **git log** shows a list of all previous commits. 
+
+### Backtracking
+Git offers eraser-like features to undo mistakes during project creatino. 
+
+* head commit
+    * The commit that you are currently own is known as the HEAD commit, which is usually the most recent commit. 
+    * use _git show HEAD_
+    * The output of this command will display everything the _git log_ command, plus all the file changes that were previously committed.
+
+* _git checkout HEAD **filename**_ 
+    * this command will restore the file in the working directory to look exactly as it did whenever the last commit was made. 
+
