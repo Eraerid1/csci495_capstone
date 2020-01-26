@@ -54,3 +54,48 @@ Git offers eraser-like features to undo mistakes during project creatino.
 * _git checkout HEAD **filename**_ 
     * this command will restore the file in the working directory to look exactly as it did whenever the last commit was made. 
 
+* _git reset HEAD **filename**_
+  * This command is used to unstage a file from the staging area. It does not discard the changes in thew working directory, but it removes them from the staging directory. 
+* _git reset **commit_SHA**_
+    * You can reset to a previous commit by using the first 7 digits of of it's SHA. 
+    * Using the commit_SHA goes to any previous commit. Any commits after the one chosen will be deleted. 
+
+ Review: 
+ * _git checkout HEAD **filename**_ Discards changes in the working directory. 
+ * _git reset HEAD **filename**_ Unstages file changes in the staging area. 
+ * _git reset **commit_SHA**_ Resets to a previous commit in your commit history. 
+
+
+### Git branch
+  Previous work has been done in master, but Git allows to creation of branches to experiment with different versions of a project. 
+  
+  You can create a new branch and make changes to that branch only. 
+
+  To figure out what branch you are on, use _git branch_.
+
+  New git commits to a branch outside of the master branch will nto show up in Master. If the new branch is a fork of the original branch, the new branch will contain previous commits from the master branch. 
+
+  * _git branch **new_branch**_
+    * Be sure to name the new branch something that describes the purpose of that branch. 
+    * Branches cannot contain white spaces. 
+
+  * _git checkout **branch_name**_
+    * You can switch to a new branch using this command. 
+  * _git merge **branch_name**_
+    * Will include all changes made from one branch to the master branch. 
+  * A merge conflict will happen whenever the same files have different commits in both branches. 
+
+  * _git branch -d **branch_name**_
+    * Used for deleting branches. 
+
+Review: 
+  * _git branch_: Lists all a Git project's branches. 
+  * _git branch **branch_name**_: Creates a new branch. 
+  * _git checkout **branch_name**_: Used to switch from one branch to another. 
+  * _git merge **branch_name**_: Used to join file changes from one branch to another. 
+  * _git branch -d **branch_name**: Deletes the branch specified. 
+
+
+
+
+
