@@ -47,9 +47,8 @@ Review:
 ### Backtracking
 Git offers eraser-like features to undo mistakes during project creatino. 
 
-* head commit
+* _git show HEAD_
     * The commit that you are currently own is known as the HEAD commit, which is usually the most recent commit. 
-    * use _git show HEAD_
     * The output of this command will display everything the _git log_ command, plus all the file changes that were previously committed.
 
 * _git checkout HEAD **filename**_ 
