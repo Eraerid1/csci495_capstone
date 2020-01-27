@@ -95,6 +95,40 @@ Review:
   * _git merge **branch_name**_: Used to join file changes from one branch to another. 
   * _git branch -d **branch_name**: Deletes the branch specified. 
 
+### Git teamwork
+
+* _git clone **remote_location** **clone_name**_
+  * Copies the director that someone else might have been working on. 
+  * Remote location is where you find the remote, which could be a web address or a file path. 
+  * clone_name is where you give the directory in which Git will clone the repository. 
+
+* _git remote -v_
+  * Used to list a Git project's remote. 
+  * Git lists the names of the remote, origin, as well as its location. 
+  * Git automatically names this remote origin, because it refers to the remote repository of origin. 
+  * The remote is listed twice: once for Fetch and Push. 
+
+* _git fetch_
+    * Brings the changes from certain files to your repositor. 
+    * You can cd into a specific file and use git fetch to view the changes made to the file. 
+
+Review: 
+A remote is a git repository that lives outside your Git project older. Remotes can live on the web, on a shared network or even in a separate folder on your local computer. 
+
+The Git Collaborative Workflow are steps that enable smooth project development when multiple collaborators are working on the same Git project. 
+
+* _git clone_: Creats a local copy of a remote. 
+* _git remote -v_: Lists a Git project's remotes. 
+* _git fetch_: Fetches work from the remote into the local copy. 
+* _git merge origin/master_: Merges origin/master into your local branch. 
+* _git push origin **branch_name**_: Pushes a local branch to the origin remote. 
+
+
+
+
+
+
+
 
 
 
